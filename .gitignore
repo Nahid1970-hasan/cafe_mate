@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+backend/.env
+backend/media/
+backend/staticfiles/
+
+node_modules/
+.expo/
+.expo-export-check/
+dist/
+npm-debug.*
+
+.DS_Store
+Thumbs.db
+_docs_extract.txt

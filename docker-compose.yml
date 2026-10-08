@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: cafemate-db
+    environment:
+      POSTGRES_DB: cafemate
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - cafemate_pg:/var/lib/postgresql/data
+
+volumes:
+  cafemate_pg:
